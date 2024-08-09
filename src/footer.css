@@ -72,6 +72,27 @@
 @media (max-width: 768px) {
     .right video{
         display: none;
-        bottom: -250vh;
+    }
+    .footer{
+        position: relative;
+        top: 250vh;
+        height: 200px;
+    }
+    .left{
+        width: 70%;
+        z-index: 999;
+    }
+    .left p{
+        font-size: 13px;
+    }
+    .emails{
+        top: 4vh;
+    }
+    .social-media{
+        top: 5vh;
+    }
+    .social-media p{
+        text-align: left;
+        margin-top: -8px;
     }
 }

@@ -18,6 +18,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/devanshwebdev?igsh=azNkNGw4eWdkeTdq">
               <img className="insta-img" src="assets/org-insta.jfif" alt="instagram profile" />
             </a>
+            <p>© 2024</p>
           </div>
         </div>
         <div className="right">
