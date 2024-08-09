@@ -68,3 +68,10 @@
     right: 1vw;
     border-radius: 40px;
 }
+
+@media (max-width: 768px) {
+    .right video{
+        display: none;
+        bottom: -250vh;
+    }
+}

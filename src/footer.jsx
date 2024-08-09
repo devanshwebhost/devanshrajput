@@ -23,10 +23,11 @@ export default function Footer() {
         <div className="right">
           <video
             src="assets/animation with html code.mp4"
+            autoPlay
             poster="assets/postervideoanimation.jpg"
             loop
             autoFocus
-            autoPlay
+            controls
           ></video>
         </div>
       </div>
