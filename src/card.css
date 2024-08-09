@@ -142,10 +142,10 @@ margin-left: 1px;
 
 @media (max-width: 768px) {
     .card{
-        width: 95vw;
+        width: 80vw;
         height: 50vh;
         margin-top: 5vh;
-        margin-left: 2.5vw;
+        margin-left: 9vw;
     }
     .main-cards{
         flex-direction: column;
