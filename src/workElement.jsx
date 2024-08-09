@@ -26,7 +26,8 @@ export default function WorkContainer() {
 
     let description = item.description;
     if(description.length > 20){
-        description = description.substring(0, 200) + "...";
+       let wordCount = 250;
+        description = description.substring(0, wordCount) + "...";
     }
      return (
        <>

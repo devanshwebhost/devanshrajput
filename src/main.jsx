@@ -4,6 +4,7 @@ import HeaderAnimation from "./animation";
 import Contact from "./contact";
 import Contactres from "./contactres";
 import WorkContainer from "./workElement";
+import Footer from "./footer";
 
 export default function Content() {
   const [work, setWork] = useState(false);
@@ -80,7 +81,8 @@ export default function Content() {
           <Contactres buttonres={`${responsive ? "form-show" : "form-hide"}`}/>
         <Hero />
         {/* <About /> */}
-        <Mywork/>
+        <WorkContainer/>
+        <Footer/>
       </div>
     </>
   );
@@ -191,25 +193,3 @@ function About() {
   );
 }
 
-function Mywork() {
-  return (
-    <WorkContainer/>
-    // <div className="my-work">
-    //   <h1>MY WORK</h1>
-    //   {Workdata.map((item, i) => {
-    //     return (
-    //       <>
-    //         <div id={item.imageBackground}></div>
-    //         <a href={item.imageLink}>
-    //           <div id={item.imageId}></div>
-    //         </a>
-    //         <div id={item.id}>
-    //           <h3>{item.title}</h3>
-    //           <p>{item.description}</p>
-    //         </div>
-    //       </>
-    //     );
-    //   })}
-    // </div>
-  );
-}

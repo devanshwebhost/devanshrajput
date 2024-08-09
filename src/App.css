@@ -283,8 +283,8 @@ nav ul li a:hover{
     z-index: 1;}
     
     .hero-img img{
-    width: 498px;
-    height: 480px;
+    width: 40vw;
+    height: 85vh;
     position: absolute;
     top: -110px;
     right: 9px;
