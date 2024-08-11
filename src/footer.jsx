@@ -27,8 +27,8 @@ export default function Footer() {
             autoPlay
             poster="assets/postervideoanimation.jpg"
             loop
-            autoFocus
-            controls
+            // autoFocus
+            // controls
           ></video>
         </div>
       </div>

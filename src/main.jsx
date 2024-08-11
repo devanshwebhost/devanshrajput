@@ -114,6 +114,10 @@ function Hero() {
     return () => clearInterval(typingInterval);
   }, [displayedText, isTyping, wordIndex, words]);
 
+  //about section function for pc
+
+  const [menupc, activemenupc] = useState(false);
+
   return (
     <>
       <ResponsiveNav />
@@ -123,8 +127,60 @@ function Hero() {
           <p className="gradient-text">{displayedText}</p>
           <span>Developer</span>
         </h1>
+
+        {/* about div */}
+        {/* <div className={`aboutpc ${menupc ? "" : "activeMenupc"}`}> */}
+        <div className={`menupc ${menupc ? "" : "activeMenupc"}`}>
+        
+        <img
+          src="assets/cross.svg"
+          className="res-pc"
+          onClick={() => activemenupc(!menupc)}
+        />
+        <div className="aboutsection">
+          <h2>Devansh Rajput</h2>
+          <img src="assets/footer-bear.jfif" alt="header-image"/>
+          <div className="aboutpara">
+          <p className="about-text">I'm a passionate developer with a strong interest in creating innovative
+            solutions. I'm always looking for ways to improve my skills and stay up-to-date with the
+            latest technologies.</p>
+            <p className="about-text">I'm a strong believer in the importance of collaboration and teamwork
+              in achieving great results. I'm always eager to learn from others and share my own knowledge and
+              experience.</p>
+              <p className="about-text">I'm a creative problem solver with a strong attention to detail
+                and a passion for delivering high-quality results.</p>
+          
+          <div className="myskills">
+            
+             <div className="skillcircle skillImg">
+             <div className="skillinfo skill"></div>
+             </div>
+             <div className="skillcircle skillImg1">
+             <div className="skillinfo skill2"></div>
+             </div>
+             <div className="skillcircle skillImg2">
+             <div className="skillinfo skill3"></div>
+             </div>
+             <div className="skillcircle skillImg3">
+             <div className="skillinfo skill4"></div>
+             </div>
+             <div className="skillcircle skillImg4">
+             <div className="skillinfo skill5"></div>
+             </div>
+             <div className="skillcircle skillImg5">
+             <div className="skillinfo skill6"></div>
+             </div>
+             <div className="skillcircle skillImg6">
+             <div className="skillinfo skill7"></div>
+             </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      {/* </div> */}
         <a href="#my-work">
-          <button id="hero-project-button" className="btn-none">
+          <button onClick={() => activemenupc(!menupc)} id="hero-project-button" className="btn-none">
             About Me
           </button>
         </a>
@@ -148,9 +204,46 @@ function ResponsiveNav() {
           className="res-cross"
           onClick={() => activemenu(!menu)}
         />
-        <ul>
+        <div className="aboutsection">
+          <h2>Devansh Rajput</h2>
+          <img className="about-img" src="assets/footer-bear.jfif" alt="header-image"/>
+          <div className="aboutpara">
+          <p className="about-text">I'm a passionate developer with a strong interest in creating innovative
+            solutions. I'm always looking for ways to improve my skills and stay up-to-date with the
+            latest technologies.</p>
+            <p className="about-text">I'm a strong believer in the importance of collaboration and teamwork
+              in achieving great results. I'm always eager to learn from others and share my own knowledge and
+              experience.</p>
+              <p className="about-text">I'm a creative problem solver with a strong attention to detail
+                and a passion for delivering high-quality results.</p>
           
-        </ul>
+          <div className="myskills">
+            
+             <div className="skillcircle skillImg">
+             <div className="skillinfo skill"></div>
+             </div>
+             <div className="skillcircle skillImg1">
+             <div className="skillinfo skill2"></div>
+             </div>
+             <div className="skillcircle skillImg2">
+             <div className="skillinfo skill3"></div>
+             </div>
+             <div className="skillcircle skillImg3">
+             <div className="skillinfo skill4"></div>
+             </div>
+             <div className="skillcircle skillImg4">
+             <div className="skillinfo skill5"></div>
+             </div>
+             <div className="skillcircle skillImg5">
+             <div className="skillinfo skill6"></div>
+             </div>
+             <div className="skillcircle skillImg6">
+             <div className="skillinfo skill7"></div>
+             </div>
+          </div>
+        </div>
+
+        </div>
       </div>
       <button
         id="hero-project-button"

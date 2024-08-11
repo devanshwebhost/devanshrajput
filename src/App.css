@@ -352,7 +352,220 @@ nav ul li a:hover{
       position: absolute;
       right: 150px;}
 
+      .activeMenupc{
+        top: -100vh !important;
+        transition: 0.5s;
+      }
+      .menupc{
+        width: 50vw;
+        height: 80vh;
+        background: #000;
+        position: absolute;
+        z-index: 999;
+        transition: 0.5s;
+        top: 10vh;
+        left: 24vw;
+      }
 
+      
+      .res-pc{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        cursor: pointer;
+      }
+
+      .aboutsection{
+        width: 100%;
+        background-color: transparent;
+        height: 100%;
+      }
+
+      .aboutsection img{
+        width: 30%;
+        height: 60%;
+        float: right;
+        margin-top: -15vh;
+      }
+      .aboutsection h2{
+        font-size: 3rem;
+        margin-top: 20vh;
+        margin: 1.5vw;
+      }
+      .aboutpara{
+        margin-top: 50vh;
+        margin: 1.5vw;
+      }
+
+      .myskills{
+        width: 80%;
+        height: 80px;
+        padding-left: 10%;
+        padding-right: 10%;
+        position: absolute;
+        bottom: 10vh;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .skillcircle{
+        width: 70px;
+        height: 70px;
+        background-color: #007bff;
+        border-radius: 50%;
+      }
+      .skillImg{
+        background-image: url(../public/assets/html-3d.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .skillImg1{
+        background-image: url(../public/assets/html-3dorg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .skillImg2{
+        background-image: url(../public/assets/javascript-3d.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .skillImg3{
+        background-image: url(../public/assets/react-3d.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .skillImg4{
+        background-image: url(../public/assets/bootstrap3d.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .skillImg5{
+        background-image: url(../public/assets/node-3d.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .skillImg6{
+        background-image: url(../public/assets/express-js.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .skillinfo{
+        visibility: hidden; /* Initially hidden */
+        transform: translateX(-8%); /* Center horizontally */
+        top: -40px;
+        width: 82px;
+        height: 30px;
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 25px;
+        color: goldenrod;
+      }
+      
+      .skill:after{
+        content: "80%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill2:after{
+        content: "70%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill3:after{
+        content: "80%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill4:after{
+        content: "80%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill5:after{
+        content: "70%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill6:after{
+        content: "50%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skill7:after{
+        content: "50%";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s;
+      }
+      .skillImg:hover .skill {
+        visibility: visible;
+        opacity: 1; /* Fade in */
+        transition: opacity 0.3s;
+    }
+     
+    .skillImg1:hover .skill2 {
+      visibility: visible;
+      opacity: 1; /* Fade in */
+      transition: opacity 0.3s;
+    }
+
+    .skillImg2:hover .skill3 {
+      visibility: visible;
+      opacity: 1; /* Fade in */
+      transition: opacity 0.3s;
+  }
+
+  .skillImg3:hover .skill4 {
+    visibility: visible;
+    opacity: 1; /* Fade in */
+    transition: opacity 0.3s;
+}
+
+.skillImg4:hover .skill5 {
+  visibility: visible;
+  opacity: 1; /* Fade in */
+  transition: opacity 0.3s;
+}
+
+.skillImg5:hover .skill6 {
+  visibility: visible;
+  opacity: 1; /* Fade in */
+  transition: opacity 0.3s;
+}
+.skillImg6:hover .skill7 {
+  visibility: visible;
+  opacity: 1; /* Fade in */
+  transition: opacity 0.3s;
+}
       /* projects */
       #img-background-1{
         position: absolute;
@@ -551,6 +764,34 @@ nav ul li a:hover{
     .main nav ul {
       flex-direction: column;
       align-items: center;
+    }
+
+    .about-img{
+      display: none;
+    }
+
+    .myskills{
+      width: 100%;
+      padding: 0px;
+      flex-wrap: wrap;
+      bottom: 30vh;
+      left: 2vw;
+      justify-content: space-evenly;
+
+    }
+    .skillcircle{
+      width: 50px;
+      height: 50px;
+      margin-right: 35px;
+      margin-top: 50px;
+    }
+
+    .aboutsection h2{
+      margin-top: 7vh;
+    }
+
+    .aboutpara{
+      margin-top: 8vh;
     }
     
 
