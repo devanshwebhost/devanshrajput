@@ -24,7 +24,7 @@ export default function Contact() {
 
     const templateParams = {
       user_email: email,
-      message: message +"from this email" + email,
+      message: message + " from this email - " + email,
     };
 
     emailjs.send('service_mk6gwgd', 'template_z5djnlh', templateParams, 'y3trjdXSeLWj_hckY')
