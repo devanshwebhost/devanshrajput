@@ -19,13 +19,14 @@ import 'react-notifications/lib/notifications.css';
 
     const templateParams = {
       user_email: email,
-      message: message,
+      message: message +"from this email" + email,
     };
 
     emailjs.send('service_mk6gwgd', 'template_z5djnlh', templateParams, 'y3trjdXSeLWj_hckY')
       .then((response) => {
         setEmail('');
-        setMessage('');
+        setMessage('')
+        console.log(email);
         // NotificationManager.success('Message sent successfully!')
         showNotify();
       }, (error) => {
