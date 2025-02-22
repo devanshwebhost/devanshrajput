@@ -18,10 +18,10 @@ const Workdata = [
     },
     {
       "id": "project-3-para",
-      "title": "Tic Tac Toe",
+      "title": "FME",
       "description": "This is a Tic Tac Toe game I made with only HTML, CSS and JAVASCRIPT. This is a fully functional game you can play with others. I used many functions to make this game. I made this game to check my skills. I actually learnt many things and functions in js. I think it's a good practice of js. After making this project, my logical thinking has now enhanced. Click on the image to see the full webpage.",
       "imageBackground": "img-background-3",
-      "imageLink": "https://devanshrajputgames.netlify.app/tic%20tac%20toe.html",
+      "imageLink": "https://fusionmediaelite.netlify.app",
       "imageId": "card-3-img"
     },
     {
